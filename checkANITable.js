@@ -16,7 +16,7 @@ const getItem = async (event) => {
     }
   }
   
-  let item;
+  let item, business_line;
 
   var docClient = new AWS.DynamoDB.DocumentClient();
   
@@ -29,7 +29,7 @@ const getItem = async (event) => {
 
       console.log("GetItem succeeded:", JSON.stringify(data, null, 2))
       item = data
-      brand = data.brand // togetherhealth or go health
+      business_line = data.business_line // togetherhealth or go health
     }
   })
 
