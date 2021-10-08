@@ -36,7 +36,7 @@ const getItem = async (event) => {
   return { 
     message,
     item,
-    event
+    business_line
   }
 
 };
